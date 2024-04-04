@@ -10,5 +10,8 @@ Here is simple result checking system created with NodeJs, Express, EJS.
   <li>No Additional Database Connection</li>
 </ul>
 
+![Homepage](./assets/home.png)
+![Resulpage](./assets/result.png)
+
 This is simple beginner based project.
 Learn [Watch Video on YouTube](https://youtube.com/@sarfarazunarr)
