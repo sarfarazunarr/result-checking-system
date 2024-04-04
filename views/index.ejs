@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Resultly</title>
+</head>
+
+<body>
+    <section class="w-full">
+        <div
+            class="w-full h-[520px] bg-[url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
+
+            <div>
+                <h1
+                    class="text-white text-center xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl font-semibold bg-gray-800 p-2 bg-opacity-40 rounded-sm">
+                    Get Your Results Instantly</h1>
+            </div>
+            <div class="w-full mx-auto">
+                <form>
+                    <div
+                        class="xl:w-1/2 lg:w-[60%] md:w-[70%] sm:w-[70%] xs:w-[90%] mx-auto flex gap-2 md:mt-6 xs:mt-4 mx-4">
+                        <input type="text" id="mark" class="border border-gray-400 w-full p-2 rounded-md text-xl pl-2"
+                            placeholder="Enter your roll number" />
+                        <button type="submit" id="submit"
+                            class="px-[10px] p-[10px] bg-blue-500 text-lg text-white rounded-md font-semibold">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+
+    // Submit button click event that redirects to the result page
+    document.getElementById('submit').addEventListener('click', (e)=>{
+        e.preventDefault();
+        let id = document.getElementById('mark').value;
+        location.href = `http://localhost:3000/marks/${id}`;
+    })
+</script>
+</html>
